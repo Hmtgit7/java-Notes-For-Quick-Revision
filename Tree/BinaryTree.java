@@ -60,6 +60,39 @@ class BinaryTree {
         display(node.left, indent + "\t");
         display(node.right, indent + "\t");
     }
+    public void PreOrder() {
+        PreOrder(this.root, "");
+    }
+    public void PreOrder(Node node, String indent) {
+        if (node == null) {
+            return;
+        }
+        System.out.println(indent + node.value);
+        PreOrder(node.left, indent + "\t");
+        PreOrder(node.right, indent + "\t");
+    }
+    public void InOrder() {
+        InOrder(this.root, "");
+    }
+    public void InOrder(Node node, String indent) {
+        if (node == null) {
+            return;
+        }
+        InOrder(node.left, indent + "\t");
+        System.out.println(indent + node.value);
+        InOrder(node.right, indent + "\t");
+    }
+    public void PostOrder() {
+        PostOrder(this.root, "");
+    }
+    public void PostOrder(Node node, String indent) {
+        if (node == null) {
+            return;
+        }
+        PostOrder(node.left, indent + "\t");
+        PostOrder(node.right, indent + "\t");
+        System.out.println(indent + node.value);
+    }
     /*
      * public void prettyDisplay() {
      * prettyDisplay(root, 0);
