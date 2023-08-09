@@ -48,6 +48,36 @@ public class LinkedList {
         }
     }
 
+    /*
+     * Delete the first node of the linked list
+     */
+    public void deleteFirst() {
+        if (head == null) {
+            tail = null;
+        }
+        if(head==null && tail==null){
+            System.out.println("List is empty");
+            return;
+        }
+        head = head.next;
+        size--;
+    }
+
+    void deleteLast(){
+        if(head==null && tail==null){
+            System.out.println("List is Empty");
+        }
+        if(head==tail){
+            head=null;
+            tail=null;
+        }
+        Node currentNode=head;
+        while(currentNode.next!=tail){
+            currentNode=currentNode.next;
+        }
+        currentNode.next=null;
+    }   
+
     public void display() {
         Node currentNode = head;
         while (currentNode != null) {

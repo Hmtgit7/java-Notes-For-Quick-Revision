@@ -14,7 +14,11 @@ public class Main {
 
         list.insertAtIndex(80,3);
         list.insertAtIndex(90,4);
+
+        list.display();
+
+        list.deleteFirst();
+
         list.display();
     }
-
 }
