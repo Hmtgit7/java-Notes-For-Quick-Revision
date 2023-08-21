@@ -1,12 +1,11 @@
 package Strings;
 public class CountAndSay {
     public static void main(String[] args){
-        System.out.println(countAndSay(2));
-        System.out.println(countAndSay2(2));
+        System.out.println(countAndSay(5));
+        System.out.println(countAndSay2(5));
     }
     public static String countAndSay(int n){
         if(n==1) return "1";
-        // if(n==2) return "11";
         String s = countAndSay(n-1);
         StringBuilder sb = new StringBuilder();
         int count = 1;
