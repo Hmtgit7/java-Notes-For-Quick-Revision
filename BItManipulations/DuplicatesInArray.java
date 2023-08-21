@@ -10,7 +10,6 @@ public class DuplicatesInArray {
         // System.out.println(res);
         arr = findSingles(arr);
         System.out.println(Arrays.toString(arr));
-
     }
 
     static int findSingle(int arr[]) {
