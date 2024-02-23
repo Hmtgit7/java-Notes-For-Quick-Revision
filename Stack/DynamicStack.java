@@ -1,6 +1,6 @@
 package Stack;
 
-public class DynamicStack extends Stack {
+public class DynamicStack extends CustomStack {
     
     public DynamicStack() {
         super();
